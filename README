@@ -1,0 +1,56 @@
+                                      Text Master
+
+TextMaster is a  chatbot that excels in text-based image generation, summarization, and paragraph suggestions , code coversioon using OPENAI API. It allows users to effortlessly create images from text, obtain concise summaries of longer texts, and generate well-structured paragraphs based on a few initial words.
+
+Built Using React, MongoDB,  Nodejs, Express , OPENAI API 
+
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App]
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+## Installation
+$ yarn add @mui/material @emotion/react @emotion/styled
+
+# or
+
+$npm install @mui/material @emotion/react @emotion/styled
+
+
+
+# Install Dependencies
+
+**For Backend** - `npm i`
+
+**For Frontend** - `cd frontend` ` npm i`
+
+## Env Variables
+
+Make Sure to Create a .env file in root directory and add appropriate variables in order to use the app.
+
+**Essential Variables**
+PORT=
+DB_URI=
+JWT_SECRET=
+JWT_EXPIRE=
+COOKIE_EXPIRE=
+OPENAI_API_KEY=
+When deploying add NODE_ENV="production"
+_fill each filed with your info respectively_
+
+
+
+
+
+
