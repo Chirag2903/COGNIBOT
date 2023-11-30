@@ -1,7 +1,9 @@
-*{
+* {
   margin: 0%;
-  top:0%;
+  top: 0%;
 }
-body{
+
+body {
+  /* background-color: black; */
   font-family: "Roboto", sans-serif;
 }

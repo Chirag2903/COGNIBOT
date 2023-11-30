@@ -15,6 +15,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const Chatbot = () => {
 
+
     const [text, settext] = useState("");
     const [response, setresponse] = useState("");
     const [error, setError] = useState("");
@@ -128,7 +129,7 @@ const Chatbot = () => {
                     Want to Try other Tools ?  <Link style={{ textDecoration: "none", marginLeft: "8px" }} to="/">BACK</Link>
                 </Typography>
             </form>
-        </Box>
+        </Box >
     );
 };
 

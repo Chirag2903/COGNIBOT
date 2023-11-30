@@ -1,5 +1,5 @@
 .header {
-    background-color: rgb(25, 118, 210);
+    background-color: rgb(19, 89, 159);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,7 +49,7 @@
 }
 
 .contain2>a:hover {
-    color: rgb(25, 118, 210);
+    color: rgb(19, 89, 159);
     background-color: white;
 }
 
