@@ -32,6 +32,7 @@ const RegisterPage = () => {
         <Box p={"2rem"} width={NotMobile ? "25%" : "80%"} m={"5rem auto"} borderRadius={5}
             sx={{
                 boxShadow: 5,
+                backgroundColor: "white"
             }}>
 
             <Collapse in={error}>
@@ -41,7 +42,11 @@ const RegisterPage = () => {
             </Collapse>
 
             <form onSubmit={handleSubmit}>
-                <Typography variant="h3">SIGN UP</Typography>
+                <Typography variant="h3" fontWeight={"bolder"} style={{
+                    background: "linear-gradient(to left, #800080, #4B0082)",
+                    WebkitBackgroundClip: "text",
+                    color: "transparent",
+                }}>SIGN UP</Typography>
 
                 <TextField
                     label="Username"
@@ -77,7 +82,11 @@ const RegisterPage = () => {
                     fullWidth
                     variant="contained"
                     size="large"
-                    sx={{ color: "white", mt: 3 }}
+                    sx={{
+                        color: "white", mt: 3,
+                        background: "linear-gradient(to left, #800080, #4B0082)",
+
+                    }}
                 >
                     Sign Up
                 </Button>

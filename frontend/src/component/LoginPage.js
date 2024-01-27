@@ -19,7 +19,7 @@ const LoginPage = () => {
             if (data.token) {
                 localStorage.setItem("authToken", true);
                 toast.success("Login Successfully");
-                navigate("/");
+                navigate("/tools");
             }
 
         } catch (err) {
@@ -38,6 +38,7 @@ const LoginPage = () => {
         <Box width={NotMobile ? "25%" : "80%"} p={"2rem"} m={"5rem auto"} borderRadius={5}
             sx={{
                 boxShadow: 5,
+                backgroundColor: "white"
             }}>
 
             <Collapse in={error}>
@@ -46,8 +47,12 @@ const LoginPage = () => {
                 </Alert>
             </Collapse>
 
-            <form onSubmit={handleSubmit}>
-                <Typography variant="h3">LOGIN</Typography>
+            <form onSubmit={handleSubmit} >
+                <Typography variant="h3" fontWeight={"bolder"} style={{
+                    background: "linear-gradient(to left, #800080, #4B0082)",
+                    WebkitBackgroundClip: "text",
+                    color: "transparent",
+                }}>LOGIN</Typography>
 
                 <TextField label="Email" type="email" required margin="normal"
                     fullWidth
@@ -72,7 +77,9 @@ const LoginPage = () => {
                     fullWidth
                     variant="contained"
                     size="large"
-                    sx={{ color: "white", mt: 3 }}
+                    sx={{
+                        color: "white", mt: 3, background: "linear-gradient(to left, #800080, #4B0082)",
+                    }}
                 >
                     Sign In
                 </Button>

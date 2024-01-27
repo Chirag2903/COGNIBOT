@@ -1,63 +1,71 @@
 .home {
-    /* background-color: rgb(211, 208, 208); */
-    /* background-color: rgba(0, 0, 255, 0.501); */
-    background-image: url("https://wallpaper.dog/large/17089348.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
+    height: 100vh;
     display: flex;
-    flex-wrap: wrap;
-    padding: 3vmax;
     justify-content: center;
+    align-items: center;
+}
+
+.home-container {
+    width: 90%;
+    height: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+hr {
+    width: 90%;
+    border: 0.1px solid gray;
 }
 
 .home>a {
     text-decoration: none;
     color: black;
+    border: none;
 }
 
 .container {
-    width: 20vmax;
-    height: 30vmax;
-    border: 2px solid rgb(176, 173, 173);
+    width: 80vw;
+    height: 10vh;
     margin: 2vmax;
     padding: 2vmax;
-    border-radius: 50px;
+    border-radius: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    flex-direction: column;
-    background-color: aliceblue;
 }
 
 .container-1 {
-    margin: 2vmax 0 2vmax 0;
+    width: 30vw;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    flex-direction: column;
+    border-right: 1px solid gray;
+    padding: 0.5rem;
+    /* background-color: aquamarine; */
 }
 
-.container-1>svg {
-    font-size: 8vmax;
-    /* color: rgba(25, 118, 210, 0.711); */
-}
 
 .container-1>h1 {
-    margin-top: 2vmax;
-    color: rgb(19, 89, 159);
+    background: linear-gradient(to left, #800080, #4B0082);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .container-2 {
-    width: 18vw;
-    height: 20vh;
-    margin: 2vmax 0 2vmax 0;
-    padding: 1vmax;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 100%;
+    width: 50vw;
     text-align: center;
-    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 1rem 0 1rem;
+    border-right: 1px solid gray;
 }
 
 .container-2>p {
@@ -65,6 +73,16 @@
     font-weight: bolder;
 }
 
+.container button {
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(to left, #800080, #4B0082);
+    color: white;
+    font-weight: bolder;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-left: 2rem;
+}
 
 @media screen and (max-width: 600px) {
 

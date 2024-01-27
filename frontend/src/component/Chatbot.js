@@ -32,7 +32,6 @@ const Chatbot = () => {
             setresponse(data);
         } catch (err) {
             setLoading(false);
-            console.log(error);
             if (err.response.data.error) {
                 setError(err.response.data.error);
             } else if (err.message) {
@@ -50,7 +49,8 @@ const Chatbot = () => {
             p={"2rem"}
             m={"2rem auto"}
             borderRadius={5}
-            sx={{ boxShadow: 5 }}
+            sx={{ boxShadow: 5, backgroundColor: "white" }}
+
         >
             <Collapse in={error}>
                 <Alert severity="error" sx={{ mb: 2 }}>
@@ -101,15 +101,13 @@ const Chatbot = () => {
             )}
 
             <form onSubmit={handleSubmit}>
-                <Typography variant="h3" align="center" m={1}>ChatBot</Typography>
-
                 <TextField
                     placeholder="Enter Your text"
                     type="text"
                     multiline={true}
                     required
                     margin="normal"
-                    style={{ width: "68%" }}
+                    style={{ width: "82%", backgroundColor: "white" }}
                     value={text}
                     onChange={(e) => {
                         settext(e.target.value);
@@ -120,11 +118,19 @@ const Chatbot = () => {
                     type="submit"
                     variant="contained"
                     size="large"
-                    sx={{ color: "white", mt: 2, ml: 2, }}
+                    sx={{
+                        color: "white",
+                        mt: 2,
+                        ml: 2,
+                        width: "200px",
+                        height: "50px",
+                        fontWeight: "bold",
+                        background: "linear-gradient(to left, #800080, #4B0082)"
+                    }}
                 >
                     Chat
                 </Button>
-                <Typography mt={2} display={"flex"}  >
+                <Typography mt={2} display={"flex"} >
                     <ArrowBackIcon fontSize="medium" />
                     Want to Try other Tools ?  <Link style={{ textDecoration: "none", marginLeft: "8px" }} to="/">BACK</Link>
                 </Typography>

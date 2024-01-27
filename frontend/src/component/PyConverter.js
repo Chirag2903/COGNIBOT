@@ -49,7 +49,7 @@ const PyConverter = () => {
             p={"2rem"}
             m={"2rem auto"}
             borderRadius={5}
-            sx={{ boxShadow: 5 }}
+            sx={{ boxShadow: 5, backgroundColor: "white" }}
         >
             <Collapse in={error}>
                 <Alert severity="error" sx={{ mb: 2 }}>
@@ -57,7 +57,11 @@ const PyConverter = () => {
                 </Alert>
             </Collapse>
             <form onSubmit={handleSubmit}>
-                <Typography variant="h3">Python Converter</Typography>
+                <Typography variant="h3" fontWeight={"bolder"} style={{
+                    background: "linear-gradient(to left, #800080, #4B0082)",
+                    WebkitBackgroundClip: "text",
+                    color: "transparent",
+                }}>Python Converter</Typography>
 
                 <TextField
                     placeholder="Enter Your text"
@@ -77,7 +81,10 @@ const PyConverter = () => {
                     fullWidth
                     variant="contained"
                     size="large"
-                    sx={{ color: "white", mt: 2 }}
+                    sx={{
+                        color: "white", mt: 2,
+                        background: "linear-gradient(to left, #800080, #4B0082)",
+                    }}
                 >
                     Convert
                 </Button>

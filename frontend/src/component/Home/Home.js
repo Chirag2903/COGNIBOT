@@ -1,9 +1,4 @@
 import React, { Fragment } from 'react'
-import Description from "@mui/icons-material/Description";
-import CreateIcon from '@mui/icons-material/Create';
-import ChatIcon from '@mui/icons-material/Chat';
-import CodeIcon from '@mui/icons-material/Code';
-import ImageIcon from '@mui/icons-material/Image';
 import { Link } from "react-router-dom"
 import "./Home.css"
 
@@ -11,69 +6,42 @@ const Home = () => {
     return (
         <Fragment>
             <div className='home'>
-
-                <Link to="/image-generate">
+                <div className='home-container'>
                     <div className='container'>
                         <div className='container-1'>
-                            <ImageIcon fontSize="large" color='primary' />
-                            <h1>Image Generator</h1>
-                        </div>
-                        <div className='container-2'>
-                            <p> The "Text to Image Converter" application is a powerful tool designed to transform textual content into visually appealing images effortlessly. With this application, users can easily convert written text, quotes, or messages into captivating images suitable for various purposes.</p>
-                        </div>
-                    </div>
-                </Link>
-
-
-                <Link to="/code-converter">
-                    <div className='container'>
-                        <div className='container-1'>
-                            <CodeIcon fontSize="large" color='primary' />
+                            <img width="64" height="64" src="https://img.icons8.com/arcade/64/laptop-coding.png" alt="laptop-coding" />
                             <h1>Python Converter</h1>
                         </div>
                         <div className='container-2'>
                             <p>The "Text to Python Code" application is a versatile tool designed to simplify the process of converting written text into executable Python code. This application streamlines the translation of textual instructions, algorithms, or logic into functional Python scripts.</p>
                         </div>
+                        <Link to="/code-converter"> <button>Try Now</button></Link>
                     </div>
-                </Link>
-
-
-                <Link to="/paragraph">
+                    <hr></hr>
                     <div className='container'>
                         <div className='container-1'>
-                            <CreateIcon fontSize="large" color='primary' />
+                            <img width="64" height="64" src="https://img.icons8.com/nolan/64/sign-up.png" alt="sign-up" />
                             <h1>Paragraph Generator</h1>
                         </div>
                         <div className='container-2'>
                             <p> The input-based paragraph generator application is a versatile tool that generates paragraphs of text based on user-provided input.</p>
                         </div>
+                        <Link to="/paragraph"> <button>Try Now</button></Link>
                     </div>
-                </Link>
-
-                <Link to="/summary">
+                    <hr></hr>
                     <div className='container'>
                         <div className='container-1'>
-                            <Description fontSize="large" color='primary' />
+                            <img width="64" height="64" src="https://img.icons8.com/ios-filled/100/7950F2/summary-list.png" alt="summary-list" />
                             <h1>Text Summarization</h1>
                         </div>
                         <div className='container-2'>
                             <p> A powerful tool that condenses lengthy texts into concise summaries, saving time and providing a quick overview of the main points. Ideal for research, content curation, and information extraction from large documents or articles.</p>
                         </div>
-                    </div>
-                </Link>
+                        <Link to="/summary"> <button>Try Now</button></Link>
 
-
-                <Link to="/chatbot">
-                    <div className='container'>
-                        <div className='container-1'>
-                            <ChatIcon fontSize="large" color='primary' />
-                            <h1>ChatBot</h1>
-                        </div>
-                        <div className='container-2'>
-                            <p> The chat bot effortlessly understands and responds to a wide array of questions across various domains. From general knowledge inquiries to specific interests, the chat bot provides accurate and reliable information in real-time. </p>
-                        </div>
                     </div>
-                </Link>
+                </div>
+
             </div>
         </Fragment>
     )

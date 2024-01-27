@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink, useNavigate } from "react-router-dom";
+import headerimage from "../../assests/chatbotheader.png"
 import "./Header.css";
 import axios from "axios"
 import { toast } from "react-hot-toast";
@@ -26,19 +27,22 @@ const Header = () => {
     return (
         <div className='header'>
             <div className='container1'>
-                <h1>TEXT MASTER</h1>
+                <img src={headerimage} alt='bot' />
+                <h2>CryptoQuill</h2>
             </div>{
                 loggedIn ? (
                     <>
                         <div className='contain2'>
                             <NavLink to='/'>Home</NavLink>
+                            <NavLink to='/tools'>AI Tools</NavLink>
                             <NavLink to='/chatbot'>ChatBot</NavLink>
+                            <NavLink to='/image-generate'>Image Generator</NavLink>
                             <NavLink to='/login' onClick={handleLogout}>Logout</NavLink>
                         </div>
                     </>
                 ) : (
                     <>
-                        <div className='contain2'>
+                        <div className='contain3'>
                             <NavLink to='/login'>Login In</NavLink>
                             <NavLink to='/register'>Sign Up</NavLink>
                         </div>

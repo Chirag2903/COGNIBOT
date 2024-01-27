@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import Home from './component/Home/Home';
+import HomePage from './component/Home/HomePage.js';
 import LoginPage from './component/LoginPage';
 import RegisterPage from './component/RegisterPage';
 import Header from "./component/Header/Header";
@@ -18,8 +19,9 @@ function App() {
       <Header />
       <Toaster />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/tools' element={<Home />} />
         <Route path='/login' element={<LoginPage />} />
+        <Route path='/' element={<HomePage />} />
         <Route path='/register' element={<RegisterPage />} />
         <Route path='/summary' element={<ProtectedRoute Component={Summary} />} />
         <Route path='/paragraph' element={<ProtectedRoute Component={Paragraph} />} />

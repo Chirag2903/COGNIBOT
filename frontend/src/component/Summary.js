@@ -49,7 +49,7 @@ const Summary = () => {
             p={"2rem"}
             m={"2rem auto"}
             borderRadius={5}
-            sx={{ boxShadow: 5 }}
+            sx={{ boxShadow: 5, backgroundColor: "white" }}
         >
             <Collapse in={error}>
                 <Alert severity="error" sx={{ mb: 2 }}>
@@ -57,7 +57,11 @@ const Summary = () => {
                 </Alert>
             </Collapse>
             <form onSubmit={handleSubmit}>
-                <Typography variant="h3">Summarize Text</Typography>
+                <Typography variant="h3" fontWeight={"bolder"} style={{
+                    background: "linear-gradient(to left, #800080, #4B0082)",
+                    WebkitBackgroundClip: "text",
+                    color: "transparent",
+                }}>Summarize Text</Typography>
 
                 <TextField
                     placeholder="Enter Your text"
@@ -77,7 +81,10 @@ const Summary = () => {
                     fullWidth
                     variant="contained"
                     size="large"
-                    sx={{ color: "white", mt: 2 }}
+                    sx={{
+                        color: "white", mt: 2,
+                        background: "linear-gradient(to left, #800080, #4B0082)",
+                    }}
                 >
                     Submit
                 </Button>
