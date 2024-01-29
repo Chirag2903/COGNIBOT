@@ -1,6 +1,6 @@
-                                      Text Master
+                                                                                                      COGNIBOT
 
-TextMaster is a  chatbot that excels in text-based image generation, summarization, and paragraph suggestions , code coversioon using OPENAI API. It allows users to effortlessly create images from text, obtain concise summaries of longer texts, and generate well-structured paragraphs based on a few initial words.
+COGNIBOT is a  chatbot that excels in text-based image generation, summarization, and paragraph suggestions , code coversioon using OPENAI API. It allows users to effortlessly create images from text, obtain concise summaries of longer texts, and generate well-structured paragraphs based on a few initial words.
 
 Built Using React, MongoDB,  Nodejs, Express , OPENAI API 
 
